@@ -27565,11 +27565,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Azedi\\Github\\Projet_Joueur\\MyReference\\MyReference\\MyReference.csproj",
+      "projectUniqueName": "C:\\Users\\Azedi\\Github\\Projet_MAUI\\Projet_Joueur\\MyReference\\MyReference\\MyReference.csproj",
       "projectName": "MyReference",
-      "projectPath": "C:\\Users\\Azedi\\Github\\Projet_Joueur\\MyReference\\MyReference\\MyReference.csproj",
+      "projectPath": "C:\\Users\\Azedi\\Github\\Projet_MAUI\\Projet_Joueur\\MyReference\\MyReference\\MyReference.csproj",
       "packagesPath": "C:\\Users\\Azedi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Azedi\\Github\\Projet_Joueur\\MyReference\\MyReference\\obj\\",
+      "outputPath": "C:\\Users\\Azedi\\Github\\Projet_MAUI\\Projet_Joueur\\MyReference\\MyReference\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

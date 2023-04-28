@@ -61,25 +61,34 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="View\AjouterJoueur.xaml.cs">
-	    <DependentUpon>AjouterJoueur.xaml</DependentUpon>
+	  <Compile Update="View\AjouterJoueurPage.xaml.cs">
+	    <DependentUpon>AjouterJoueurPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\ModifierJoueurPage.xaml.cs">
+	    <DependentUpon>ModifierJoueurPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\RechercheJoueurPage.xaml.cs">
+	    <DependentUpon>RechercheJoueurPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="View\AjouterJoueur.xaml">
+	  <MauiXaml Update="View\AjouterJoueurPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\DetailPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\JoueurPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\ModifierJoueur.xaml">
+	  <MauiXaml Update="View\ModifierJoueurPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\RechercheJoueur.xaml">
+	  <MauiXaml Update="View\RechercheJoueurPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

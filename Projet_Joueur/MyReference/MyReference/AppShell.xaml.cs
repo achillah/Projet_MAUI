@@ -1,4 +1,6 @@
-﻿namespace MyReference;
+﻿using MyReference.View;
+
+namespace MyReference;
 
 public partial class AppShell : Shell
 {
@@ -6,11 +8,12 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
 
+        Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
         Routing.RegisterRoute(nameof(DetailPage), typeof(DetailPage));
         Routing.RegisterRoute(nameof(JoueurPage), typeof(JoueurPage));
-        Routing.RegisterRoute(nameof(AjouterJoueur), typeof(AjouterJoueur));
-        Routing.RegisterRoute(nameof(ModifierJoueur), typeof(ModifierJoueur));
-        Routing.RegisterRoute(nameof(RechercheJoueur), typeof(RechercheJoueur));
+        Routing.RegisterRoute(nameof(AjouterJoueurPage), typeof(AjouterJoueurPage));
+        Routing.RegisterRoute(nameof(ModifierJoueurPage), typeof(ModifierJoueurPage));
+        Routing.RegisterRoute(nameof(RechercheJoueurPage), typeof(RechercheJoueurPage));
 
     }
 }

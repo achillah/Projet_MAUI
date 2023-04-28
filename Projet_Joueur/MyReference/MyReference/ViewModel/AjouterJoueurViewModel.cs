@@ -24,10 +24,23 @@ public partial class AjouterJoueurViewModel : ObservableObject
     }
 
     [RelayCommand]
-    async void Ajouter()
+    async void AjouterJoueur()
     {
-        Globals.MyJoueurList.Add(joueurNvx);
-        //Text = string.Empty;
-        await Shell.Current.DisplayAlert("Joueur ajouté", "Vous pouvez revenir en arrière.", "OK");
+        if ((string.IsNullOrEmpty(JoueurNvx.ID)) || (string.IsNullOrWhiteSpace(JoueurNvx.ID))
+            || (string.IsNullOrEmpty(JoueurNvx.Nom)) || (string.IsNullOrWhiteSpace(JoueurNvx.Nom))
+            || (string.IsNullOrEmpty(JoueurNvx.Prenom)) || (string.IsNullOrWhiteSpace(JoueurNvx.Prenom))
+            || (string.IsNullOrEmpty(JoueurNvx.Age.ToString())) || (string.IsNullOrWhiteSpace(JoueurNvx.Age.ToString()))
+            || (string.IsNullOrEmpty(JoueurNvx.Poste)) || (string.IsNullOrWhiteSpace(JoueurNvx.Poste))
+            || (string.IsNullOrEmpty(JoueurNvx.Image)) || (string.IsNullOrWhiteSpace(JoueurNvx.Image)))
+        {
+            await Shell.Current.DisplayAlert("Erreur Ajout Joueur", "Veuillez entrer de vrai valeurs", "OK");
+        }
+        else
+        {
+            Globals.MyJoueurList.Add(JoueurNvx);
+
+            //Text = string.Empty;
+            await Shell.Current.DisplayAlert("Joueur ajouté", "Vous pouvez revenir en arrière.", "OK");
+        }
     }
 }

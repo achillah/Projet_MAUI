@@ -14,18 +14,18 @@ public partial class ModifierJouerViewModel : ObservableObject
     }
 
     [RelayCommand]
-    async void Modifier()
+    async void ModifierJoueur()
     {
 
         foreach (Joueur joueur in Globals.MyJoueurList)
         {
-            if(joueur.ID == joueurUpd.ID) 
+            if(joueur.ID == JoueurUpd.ID) 
             {
-                joueurUpd.Nom = joueur.Nom;
-                joueurUpd.Prenom = joueur.Prenom;
-                joueurUpd.Age = joueur.Age;
-                joueurUpd.Poste = joueur.Poste;
-                joueurUpd.Image = joueur.Image;
+                JoueurUpd.Nom = joueur.Nom;
+                JoueurUpd.Prenom = joueur.Prenom;
+                JoueurUpd.Age = joueur.Age;
+                JoueurUpd.Poste = joueur.Poste;
+                JoueurUpd.Image = joueur.Image;
             }
         }
 

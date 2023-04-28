@@ -9,19 +9,22 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="View\AjouterJoueur.xaml">
+    <MauiXaml Update="View\AjouterJoueurPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="View\DetailPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="View\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="View\JoueurPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="View\ModifierJoueur.xaml">
+    <MauiXaml Update="View\ModifierJoueurPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="View\RechercheJoueur.xaml">
+    <MauiXaml Update="View\RechercheJoueurPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

@@ -4,80 +4,19 @@
              xmlns:viewmodel="clr-namespace:MyReference.ViewModel"
              xmlns:model="clr-namespace:MyReference.Model"
              x:DataType="viewmodel:MainViewModel"
-             x:Class="MyReference.MainPage"
-             x:Name="MyPage">
+             x:Class="MyReference.MainPage">
 
-    <ContentPage.MenuBarItems>
-        <MenuBarItem Text="Pages" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
-            <MenuFlyoutItem Text="Ajouter Joueur"
-                                Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToAddJoueurPageCommand}"/>
-            <MenuFlyoutItem Text="Rechercher Joueur"
-                                Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToRecherchePageCommand}"/>
-        </MenuBarItem>
-    </ContentPage.MenuBarItems>
+   
 
-    <ScrollView>
-
-
-        <Grid Padding="10" RowSpacing="10" ColumnDefinitions="*" RowDefinitions="Auto,*" BackgroundColor="Transparent" x:Name="grid1">
-
-            <StackLayout Orientation="Horizontal" Spacing="5">
-                <Image Source="telechargement.png"
-                                WidthRequest="50"
-                                HeightRequest="50"/>
-                <Label Text="Liga Joueur" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand" />
-            </StackLayout>
-
-            <Button Text="Afficher les joueurs" 
+    <Grid>
+        <Button Text="Aller HomePage" 
                 Grid.Row="0" 
                 Grid.Column="0"
                 HeightRequest="60"
                 WidthRequest="200"
-                HorizontalOptions="End"
-                Command="{Binding JoueursFromJSONCommand}"
-                />
-            <CollectionView ItemsSource="{Binding MyJoueurs}" Grid.Row="1">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Joueur">
-                        <Grid Padding="10" ColumnDefinitions="500,500" >
-                            <Frame HeightRequest="125" 
-                                   Grid.Column="0">
-
-                                <Frame.GestureRecognizers>
-
-                                    <TapGestureRecognizer CommandParameter ="{Binding .}"
-                                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToJoueursCommand}"/>
-
-                                </Frame.GestureRecognizers>
-
-                                <Grid Padding="0" ColumnDefinitions="125,*" BackgroundColor="Grey">
-                                    <Image
-                                Aspect="AspectFill"
-                                HeightRequest="100"
-                                Source="{Binding Image}"
-                                WidthRequest="100" />
-                                    <VerticalStackLayout    VerticalOptions="Center"
-                                                        Grid.Column="1"
-                                                        Padding="10">
-                                        <Label VerticalOptions="Center" Text="{Binding Nom}"/>
-                                        <Label VerticalOptions="Center" Text="{Binding Prenom}"/>
-                                    </VerticalStackLayout>
-
-                                </Grid>
-
-                            </Frame>
-
-                            
-
-                        </Grid>
-
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-
-            </CollectionView>
-
-        </Grid>
-    </ScrollView>
+                Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=AllerHomePageCommand}"/>
+                
+    </Grid>
 
 
 </ContentPage>

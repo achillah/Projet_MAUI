@@ -1,24 +1,15 @@
-using MyQualityApp.Services;
-using System.Collections;
-
 namespace MyReference.ViewModel;
 
 public partial class MainViewModel : ObservableObject
 {
     //DeviceOrientationServices MyDeviceOrientationService;
-    public ObservableCollection<Joueur> MyJoueurs { get; set; } = new();
+    
 
     public MainViewModel()
     {
         //Items = new ObservableCollection<string>();
         //Queue Serialbuffer = new();
     }
-
-    public Joueur joueur;
-
-
-    [ObservableProperty]
-    string monTexte = "Go To Recherche Page";
 
     /*[ObservableProperty]
     string text;
@@ -36,19 +27,19 @@ public partial class MainViewModel : ObservableObject
         {
             {"Databc", data }
         });
-    }*/
+    }
 
     [RelayCommand]
-    public async Task GoToRecherchePage(string data)
+    public async Task AllerRecherchePage(string data)
     {
-        await Shell.Current.GoToAsync(nameof(RechercheJoueur), true, new Dictionary<string, object>
+        await Shell.Current.GoToAsync(nameof(RechercheJoueurPage), true, new Dictionary<string, object>
         {
             {"Databc", data }
         });
     }
 
     [RelayCommand]
-    async Task GoToJoueurs(Joueur joueur)
+    async Task AllerJoueurPage(Joueur joueur)
     {
         if (joueur is null)
             return;
@@ -62,14 +53,20 @@ public partial class MainViewModel : ObservableObject
     }
 
     [RelayCommand]
-    public async Task GoToAddJoueurPage()
+    public async Task AllerAjouterJoueurPage()
     {
-        await Shell.Current.GoToAsync(nameof(AjouterJoueur), true);
+        await Shell.Current.GoToAsync(nameof(AjouterJoueurPage), true);
+    }*/
+
+    [RelayCommand]
+    public async Task AllerHomePage() 
+    {
+        await Shell.Current.GoToAsync(nameof(HomePage), true);
     }
 
-    
 
-    public void RefreshList()
+
+   /* public void RefreshList()
     {
         MyJoueurs.Clear();
 
@@ -80,7 +77,7 @@ public partial class MainViewModel : ObservableObject
     }
 
     [RelayCommand]
-    async Task JoueursFromJSON()
+    async Task JoueursDepuisJSON()
     {
         //if (IsBusy) return;
 
@@ -99,5 +96,5 @@ public partial class MainViewModel : ObservableObject
         //finally { IsBusy = false; }
 
         RefreshList();
-    }
+    }*/
 }

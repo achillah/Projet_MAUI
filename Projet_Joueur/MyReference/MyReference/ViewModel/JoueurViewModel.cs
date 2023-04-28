@@ -1,6 +1,4 @@
-﻿using System.Windows.Input;
-
-namespace MyReference.ViewModel;
+﻿namespace MyReference.ViewModel;
 
 [QueryProperty("Joueur", "Joueur")]
 public partial class JoueurViewModel : BaseViewModel
@@ -14,7 +12,7 @@ public partial class JoueurViewModel : BaseViewModel
     public async Task AllerModifierJoueurPage(Joueur joueur)
     {
         //await Shell.Current.DisplayAlert("Successfully Created!", "You can go back.", "OK");
-        await Shell.Current.GoToAsync(nameof(ModifierJoueur), true, new Dictionary<string, object>
+        await Shell.Current.GoToAsync(nameof(ModifierJoueurPage), true, new Dictionary<string, object>
         {
 
             {"Joueur", joueur }
@@ -23,7 +21,7 @@ public partial class JoueurViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    async void Supprimer(Joueur joueur)
+    async void SupprimerJoueur(Joueur joueur)
     {
         if (Globals.MyJoueurList.Contains(joueur))
         {

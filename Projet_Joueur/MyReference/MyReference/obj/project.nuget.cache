@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DFrYsF+CEkCBcFLcwurBMYE3hpAIR1gKCV0KLH9SGbrYqAk2J9y0sxHhSm6td8gDVHKkc9BKP/UxLknqW0VYCA==",
+  "dgSpecHash": "69e/aEIQzYgEFt7JaaYTE6HoO7p5PqQXc9BcHI8tpAxPT/hZ/MRVNwoeSVuOeyfZqTuwbaWnJr3ANuowHbfeSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Azedi\\Github\\Projet_Joueur\\MyReference\\MyReference\\MyReference.csproj",
+  "projectFilePath": "C:\\Users\\Azedi\\Github\\Projet_MAUI\\Projet_Joueur\\MyReference\\MyReference\\MyReference.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Azedi\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512",
     "C:\\Users\\Azedi\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
