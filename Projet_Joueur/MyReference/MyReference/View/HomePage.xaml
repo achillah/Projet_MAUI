@@ -28,14 +28,7 @@
                 <Label Text="Liga Joueur" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand" />
             </StackLayout>
 
-            <Button Text="Afficher les joueurs" 
-                Grid.Row="0" 
-                Grid.Column="0"
-                HeightRequest="60"
-                WidthRequest="200"
-                HorizontalOptions="End"
-                Command="{Binding JoueursDepuisJSONCommand}"
-                />
+            
             <CollectionView ItemsSource="{Binding MyJoueurs}" Grid.Row="1">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Joueur">

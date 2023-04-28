@@ -58,11 +58,11 @@ public partial class MainViewModel : ObservableObject
         await Shell.Current.GoToAsync(nameof(AjouterJoueurPage), true);
     }*/
 
-    [RelayCommand]
+    /*[RelayCommand]
     public async Task AllerHomePage() 
     {
         await Shell.Current.GoToAsync(nameof(HomePage), true);
-    }
+    }*/
 
 
 
@@ -76,8 +76,8 @@ public partial class MainViewModel : ObservableObject
         }
     }
 
-    [RelayCommand]
-    async Task JoueursDepuisJSON()
+    */[RelayCommand]
+    async Task ChargerJson_AllerHomePage()
     {
         //if (IsBusy) return;
 
@@ -95,6 +95,7 @@ public partial class MainViewModel : ObservableObject
         }
         //finally { IsBusy = false; }
 
-        RefreshList();
-    }*/
+        //RefreshList();
+        await Shell.Current.GoToAsync(nameof(HomePage), true);
+    }
 }

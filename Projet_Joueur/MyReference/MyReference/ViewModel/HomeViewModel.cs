@@ -76,7 +76,7 @@ public partial class HomeViewModel : ObservableObject
         }
     }
 
-    [RelayCommand]
+    /*[RelayCommand]
     async Task JoueursDepuisJSON()
     {
         //if (IsBusy) return;
@@ -96,5 +96,5 @@ public partial class HomeViewModel : ObservableObject
         //finally { IsBusy = false; }
 
         RefreshList();
-    }
+    }*/
 }
