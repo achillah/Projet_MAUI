@@ -38,6 +38,9 @@ public static class MauiProgram
         builder.Services.AddTransient<RechercheJoueurViewModel>();
         builder.Services.AddTransient<RechercheJoueurPage>();
 
+        builder.Services.AddTransient<ConnexionViewModel>();
+        builder.Services.AddTransient<ConnexionPage>();
+
 
         builder.Services.AddTransient<JoueurService>();
 

@@ -2,7 +2,7 @@ namespace MyReference.ViewModel;
 
 
 [QueryProperty(nameof(JoueurUpd), "Joueur")]
-public partial class ModifierJouerViewModel : ObservableObject
+public partial class ModifierJouerViewModel : BaseViewModel
 {
     [ObservableProperty]
      Joueur joueurUpd;

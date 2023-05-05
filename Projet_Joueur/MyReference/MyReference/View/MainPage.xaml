@@ -6,17 +6,32 @@
              x:DataType="viewmodel:MainViewModel"
              x:Class="MyReference.MainPage">
 
-   
-
     <Grid>
+        <!-- Titre "LigaJoueur" -->
+        <Label Text="LigaJoueur"
+               TextColor="Black"
+               FontSize="Large" 
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="Start" 
+               Margin="0,50,0,10" />
+
+        <!-- Image "telechargement.png" -->
+        <Image Source="telechargement.png" 
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="Center"
+               WidthRequest="200"
+               HeightRequest="200" />
+
+        <!-- Bouton "Aller HomePage" -->
         <Button Text="Aller HomePage" 
                 Grid.Row="0" 
                 Grid.Column="0"
                 HeightRequest="60"
                 WidthRequest="200"
-                Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=ChargerJson_AllerHomePageCommand}"/>
-                
-    </Grid>
+                Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=ChargerJson_AllerHomePageCommand}"
+                VerticalOptions="End"
+                Margin="0,100,0,50" />
 
+    </Grid>
 
 </ContentPage>

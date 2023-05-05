@@ -3,7 +3,7 @@
 namespace MyReference.ViewModel;
 
 [QueryProperty(nameof(MonTxt), "Databc")]
-public partial class RechercheJoueurViewModel : ObservableObject
+public partial class RechercheJoueurViewModel : BaseViewModel
 {
     DeviceOrientationServices MyDeviceOrientationService;
 
@@ -22,7 +22,7 @@ public partial class RechercheJoueurViewModel : ObservableObject
         MyDeviceOrientationService.MyQueueBuffer.Changed += SerialBuffer_Changed;
     }
 
-    private void SerialBuffer_Changed(object sender, EventArgs e)
+    private async void SerialBuffer_Changed(object sender, EventArgs e)
     {
         DeviceOrientationServices.QueueBuffer myQueue = (DeviceOrientationServices.QueueBuffer)sender;
 
@@ -33,6 +33,11 @@ public partial class RechercheJoueurViewModel : ObservableObject
             if (MonTxt == joueur.ID)
             {
                 JoueurRechercher = joueur;
+            }
+
+            else
+            {
+                await Shell.Current.DisplayAlert("L'ID entrer n'a pas été retrouvé", "Veuillez vous diriger vers la page d'ajout et créer un joueur avec cet ID", "OK");
             }
         }
 

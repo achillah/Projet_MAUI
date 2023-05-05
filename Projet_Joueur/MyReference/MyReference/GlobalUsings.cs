@@ -15,11 +15,14 @@ global using System.Text.Json;
 global using System.Management;
 global using System.Collections;
 global using MyQualityApp.Services;
+global using System.Data;
 
 
 public class Globals
 {
 
     public static List<Joueur> MyJoueurList = new();
+
+    public static DataSet UserSet = new();
 
 }

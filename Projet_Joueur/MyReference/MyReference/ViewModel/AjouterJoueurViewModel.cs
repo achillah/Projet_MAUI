@@ -1,6 +1,6 @@
 ﻿namespace MyReference.ViewModel;
 
-public partial class AjouterJoueurViewModel : ObservableObject
+public partial class AjouterJoueurViewModel : BaseViewModel
 {
     /*[ObservableProperty]
    public string iD;

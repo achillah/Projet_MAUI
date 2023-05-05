@@ -1,82 +1,18 @@
 namespace MyReference.ViewModel;
 
-public partial class MainViewModel : ObservableObject
+public partial class MainViewModel : BaseViewModel
 {
-    //DeviceOrientationServices MyDeviceOrientationService;
     
-
     public MainViewModel()
     {
-        //Items = new ObservableCollection<string>();
-        //Queue Serialbuffer = new();
-    }
+        /////on cree les dataset, datatable en appelant le constructeur
+        UserDonneesTables MyUserTables = new();
 
-    /*[ObservableProperty]
-    string text;
+        //Globals.UserSet.Tables["Users"].Columns["UserName"] = "blabla";
 
-    [ObservableProperty]
-    ObservableCollection<string> items;*/
-
-  
-
-
-   /* [RelayCommand]
-    public async Task GoToDetailPage(string data)
-    {
-        await Shell.Current.GoToAsync(nameof(DetailPage), true, new Dictionary<string, object>
-        {
-            {"Databc", data }
-        });
     }
 
     [RelayCommand]
-    public async Task AllerRecherchePage(string data)
-    {
-        await Shell.Current.GoToAsync(nameof(RechercheJoueurPage), true, new Dictionary<string, object>
-        {
-            {"Databc", data }
-        });
-    }
-
-    [RelayCommand]
-    async Task AllerJoueurPage(Joueur joueur)
-    {
-        if (joueur is null)
-            return;
-
-        await Shell.Current.GoToAsync(nameof(JoueurPage), true, new Dictionary<string, object>
-        {
-
-            {"Joueur", joueur }
-
-        });
-    }
-
-    [RelayCommand]
-    public async Task AllerAjouterJoueurPage()
-    {
-        await Shell.Current.GoToAsync(nameof(AjouterJoueurPage), true);
-    }*/
-
-    /*[RelayCommand]
-    public async Task AllerHomePage() 
-    {
-        await Shell.Current.GoToAsync(nameof(HomePage), true);
-    }*/
-
-
-
-   /* public void RefreshList()
-    {
-        MyJoueurs.Clear();
-
-        foreach (Joueur joueur in Globals.MyJoueurList)
-        {
-            MyJoueurs.Add(joueur);
-        }
-    }
-
-    */[RelayCommand]
     async Task ChargerJson_AllerHomePage()
     {
         //if (IsBusy) return;
@@ -95,7 +31,6 @@ public partial class MainViewModel : ObservableObject
         }
         //finally { IsBusy = false; }
 
-        //RefreshList();
         await Shell.Current.GoToAsync(nameof(HomePage), true);
     }
 }

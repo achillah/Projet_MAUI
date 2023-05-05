@@ -1,6 +1,6 @@
 namespace MyReference.ViewModel;
 
-public partial class HomeViewModel : ObservableObject
+public partial class HomeViewModel : BaseViewModel
 {
     //DeviceOrientationServices MyDeviceOrientationService;
     public ObservableCollection<Joueur> MyJoueurs { get; set; } = new();
@@ -62,6 +62,12 @@ public partial class HomeViewModel : ObservableObject
     public async Task AllerAjouterJoueurPage()
     {
         await Shell.Current.GoToAsync(nameof(AjouterJoueurPage), true);
+    }
+
+    [RelayCommand]
+    public async Task AllerConnexionPage()
+    {
+        await Shell.Current.GoToAsync(nameof(ConnexionPage), true);
     }
 
 
