@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "R2tv1wvfFaiAik+XFSueT2dUNAVCx3DvMlDWkpZfeLqWYKTNTZnFb5CU4D05VN+MZW7V79jwDNEBKcqsQ2OGbg==",
+=======
   "dgSpecHash": "69e/aEIQzYgEFt7JaaYTE6HoO7p5PqQXc9BcHI8tpAxPT/hZ/MRVNwoeSVuOeyfZqTuwbaWnJr3ANuowHbfeSg==",
+>>>>>>> parent of bae956c (dbConnexion)
   "success": true,
   "projectFilePath": "C:\\Users\\Azedi\\Github\\Projet_MAUI\\Projet_Joueur\\MyReference\\MyReference\\MyReference.csproj",
   "expectedPackageFiles": [
@@ -30,6 +34,7 @@
     "C:\\Users\\Azedi\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.59\\microsoft.maui.graphics.win2d.winui.desktop.7.0.59.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
     "C:\\Users\\Azedi\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+    "C:\\Users\\Azedi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Azedi\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-arm.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\Azedi\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-arm64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\Azedi\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\8.0.0-preview.1.23110.8\\runtime.linux-x64.runtime.native.system.io.ports.8.0.0-preview.1.23110.8.nupkg.sha512",

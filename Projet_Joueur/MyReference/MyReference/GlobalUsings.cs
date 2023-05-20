@@ -18,6 +18,7 @@ global using MyQualityApp.Services;
 global using System.Data;
 
 
+
 public class Globals
 {
 

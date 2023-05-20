@@ -37,7 +37,9 @@ public partial class RechercheJoueurViewModel : BaseViewModel
 
             else
             {
-                await Shell.Current.DisplayAlert("L'ID entrer n'a pas été retrouvé", "Veuillez vous diriger vers la page d'ajout et créer un joueur avec cet ID", "OK");
+                ///Ceci est pour faire une redirection mais je ne l'ai pas TESTER donc je ne sais pas si cela fonctionne!!
+                await Shell.Current.GoToAsync(nameof(AjouterJoueurPage), true);
+                //await Shell.Current.DisplayAlert("L'ID entrer n'a pas été retrouvé", "Veuillez vous diriger vers la page d'ajout et créer un joueur avec cet ID", "OK");
             }
         }
 

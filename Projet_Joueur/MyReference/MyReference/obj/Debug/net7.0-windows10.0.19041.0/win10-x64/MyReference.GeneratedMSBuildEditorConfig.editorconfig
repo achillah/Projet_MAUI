@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.HomePage.
 build_metadata.AdditionalFiles.TargetPath = View\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\HomePage.xaml
 
+[C:/Users/Azedi/Github/Projet_MAUI/Projet_Joueur/MyReference/MyReference/View/InscriptionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.InscriptionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InscriptionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InscriptionPage.xaml
+
 [C:/Users/Azedi/Github/Projet_MAUI/Projet_Joueur/MyReference/MyReference/View/JoueurPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyReference.View.JoueurPage.xaml

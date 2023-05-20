@@ -75,6 +75,17 @@
               "version": "[6.0.552, )",
               "autoReferenced": true
             },
+<<<<<<< HEAD
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3.23174.8, )"
+            },
+=======
+>>>>>>> parent of bae956c (dbConnexion)
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23110.8, )"
@@ -186,6 +197,17 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+<<<<<<< HEAD
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3.23174.8, )"
+            },
+=======
+>>>>>>> parent of bae956c (dbConnexion)
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23110.8, )"
@@ -312,6 +334,17 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+<<<<<<< HEAD
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3.23174.8, )"
+            },
+=======
+>>>>>>> parent of bae956c (dbConnexion)
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23110.8, )"
@@ -399,6 +432,17 @@
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
             },
+<<<<<<< HEAD
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3.23174.8, )"
+            },
+=======
+>>>>>>> parent of bae956c (dbConnexion)
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.1.23110.8, )"

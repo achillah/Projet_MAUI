@@ -12,8 +12,12 @@ public partial class MainViewModel : BaseViewModel
 
     }
 
+<<<<<<< HEAD
+    async Task ChargerJson()
+=======
     [RelayCommand]
     async Task ChargerJson_AllerHomePage()
+>>>>>>> parent of bae956c (dbConnexion)
     {
         //if (IsBusy) return;
 
@@ -31,6 +35,97 @@ public partial class MainViewModel : BaseViewModel
         }
         //finally { IsBusy = false; }
 
+
+    }
+
+    [RelayCommand]
+    async Task Connexion_AllerHomePage()
+    {
+        //if (IsBusy) return;
+        await ReadAccess();
+        RemplirDB();
+
+            foreach (var user in MyUsers)
+            {
+                if (UserNameLog == user.UserName )
+                {
+
+                    if(UserPasswordLog == user.UserPassword)
+                    {
+                    IsLoggedIn = true;
+                    await ChargerJson();
+                    await Shell.Current.GoToAsync(nameof(HomePage), true);
+                    
+                    }
+                }
+
+            }
+
+            if (IsLoggedIn == false) 
+        {
+            await Shell.Current.DisplayAlert("Databse", "Utilisateur non trouvé", "OK");
+        }
+
+
+
+
+    }
+
+    async Task ReadAccess()
+    {
+
+        Globals.UserSet.Tables["Users"].Clear();
+        Globals.UserSet.Tables["Access"].Clear();
+        try
+        {
+            await MyDBService.ReadAccessTable();
+            await MyDBService.ReadUserTable();
+
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Databse", ex.Message, "OK");
+        }
+    }
+
+
+    async void RemplirDB()
+    {
+        IsBusy = true;
+
+        List<User> usersTemp = new();
+
+        MyUsers.Clear();
+
+        /////On va rajouter la connexion à la base de données
+
+
+
+        /// On ajoute les éléments de la DB 
+        try
+        {
+            usersTemp = Globals.UserSet.Tables["Users"].AsEnumerable().Select(m => new User()
+            {
+                User_ID = m.Field<Int16>("User_ID"),
+                UserName = m.Field<string>("UserName"),
+                UserPassword = m.Field<string>("UserPassword"),
+                UserAccessType = m.Field<Int16>("UserAccessType"),
+            }).ToList();
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Databse", ex.Message, "OK");
+        }
+
+        ///on remplit la liste avec les éléments de la DB
+        foreach (var user in usersTemp)
+        {
+            MyUsers.Add(user);
+        }
+        IsBusy = false;
+=======
+
         await Shell.Current.GoToAsync(nameof(HomePage), true);
+>>>>>>> parent of bae956c (dbConnexion)
     }
 }
